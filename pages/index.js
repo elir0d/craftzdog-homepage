@@ -10,6 +10,7 @@ import thumbMedium from '../public/images/links/medium.png'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import {Link, Container, Heading, Box, SimpleGrid, Button, List, ListItem, useColorModeValue, chakra } from '@chakra-ui/react'
+import { Palette } from "../lib/theme";
 
 
 const ProfileImage = chakra(Image, {
@@ -35,7 +36,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Rodrigo Trindade
           </Heading>
-          <p>Data Science Student (Guitarrist / Junk Food lover)</p>
+          <p>| Data Science Student &bull; Guitarrist &bull; Junk Food lover &bull; Typeracer |</p>
         </Box>
         <Box
           flexShrink={0}
@@ -44,7 +45,7 @@ const Home = () => (
           textAlign="center"
         >
           <Box
-            borderColor="whiteAlpha.800"
+            borderColor=""
             borderWidth={2}
             borderStyle="solid"
             w="100px"
