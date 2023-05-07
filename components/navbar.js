@@ -28,7 +28,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       href={href}
       scroll={false}
       p={2}
-      bg={active ? 'grassTeal' : undefined}
+      bg={active ? '#a0ced0' : undefined}
       color={active ? '#202023' : inactiveColor}
       target={target}
       {...props}
@@ -58,13 +58,13 @@ const Navbar = props => {
       <Container
         display="flex"
         p={2}
-        maxW="container.md"
+        maxW="container.lg"
         wrap="wrap"
         align="center"
-        justify="space-between"
+        justify="space-evenly"
       >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+          <Heading as="h1" size="md" letterSpacing={'tighter'} marginLeft={4} marginRight={5} >
             <Logo />
           </Heading>
         </Flex>
@@ -101,7 +101,7 @@ const Navbar = props => {
           </LinkItem>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box flex={1} align="center">
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>

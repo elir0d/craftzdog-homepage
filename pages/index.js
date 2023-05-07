@@ -1,26 +1,15 @@
-import NextLink from 'next/link'
-import {
-  Link,
-  Container,
-  Heading,
-  Box,
-  SimpleGrid,
-  Button,
-  List,
-  ListItem,
-  useColorModeValue,
-  chakra
-} from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
-import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-import thumbMedium from '../public/images/links/medium.png'
-import thumbDev from '../public/images/links/dev.png'
 import Image from 'next/image'
+import NextLink from 'next/link'
+import Section from '../components/section'
+import Paragraph from '../components/paragraph'
+import Layout from '../components/layouts/article'
+import { GridItem } from '../components/grid-item'
+import thumbDev from '../public/images/links/dev.png'
+import { BioSection, BioYear } from '../components/bio'
+import thumbMedium from '../public/images/links/medium.png'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoLogOutOutline, IoMailUnreadSharp } from 'react-icons/io5'
+import {Link, Container, Heading, Box, SimpleGrid, Button, List, ListItem, useColorModeValue, chakra } from '@chakra-ui/react'
+
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -28,7 +17,7 @@ const ProfileImage = chakra(Image, {
 
 const Home = () => (
   <Layout>
-    <Container>
+    <Container maxW="container">
       <Box
         borderRadius="lg"
         mb={6}
@@ -37,7 +26,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, guys! I&apos;m a Data Scientist based in São Paulo - Brazil!
+        &quot;I propose to consider the question &apos;Can machines think?&apos; As he highlights, the traditional approach to such a question is to start with definitions, defining both the terms &apos;machine&apos; and &apos;think&apos;&quot; - Alan Mathison Turing
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -45,7 +34,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Rodrigo Trindade
           </Heading>
-          <p>Data Science Student (Guitarrist / Junk Food lover)</p>
+          <p>| Data Science Student &bull; Guitarrist &bull; Junk Food lover &bull; Typeracer |</p>
         </Box>
         <Box
           flexShrink={0}
@@ -54,7 +43,7 @@ const Home = () => (
           textAlign="center"
         >
           <Box
-            borderColor="whiteAlpha.800"
+            borderColor=""
             borderWidth={2}
             borderStyle="solid"
             w="100px"
@@ -104,10 +93,11 @@ const Home = () => (
             as={NextLink}
             href="/works"
             scroll={false}
-            rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
+            colorScheme='primary'
+            rightIcon={<IoLogOutOutline />}
+            
           >
-            My portfolio
+            Go to my portfolio
           </Button>
         </Box>
       </Section>
@@ -176,13 +166,13 @@ const Home = () => (
           Socials
         </Heading>
         <List>
-        <SimpleGrid columns={4} rows={2} gap={1}>
+        <SimpleGrid minChildWidth='120px' spacing='20px'>
           <ListItem>
             <Link href="https://github.com/elir0d" target="_blank">
               <Button
-                width="110px"
+                width="10rem"
                 variant="solid"
-                colorScheme="teal"
+                colorScheme=""
                 leftIcon={<IoLogoGithub />}
               >
                github
@@ -192,9 +182,9 @@ const Home = () => (
           <ListItem>
             <Link href="https://twitter.com/elir0d" target="_blank">
               <Button
-                width="110px"
+                width="10rem"
                 variant="solid"
-                colorScheme="teal"
+                colorScheme=""
                 leftIcon={<IoLogoTwitter />}
               >
                Twitter
@@ -204,9 +194,9 @@ const Home = () => (
           <ListItem>
             <Link href="https://www.linkedin.com/in/rodrigo-trindade-b05b73203/" target="_blank">
               <Button
-                width="110px"
+                width="10rem"
                 variant="solid"
-                colorScheme="teal"
+                colorScheme=""
                 leftIcon={<IoLogoLinkedin />}
               >
                Linkedin
@@ -216,9 +206,9 @@ const Home = () => (
           <ListItem>
             <Link href="https://instagram.com/elir0d" target="_blank">
               <Button
-                width="110px"
+                width="10rem"
                 variant="solid"
-                colorScheme="teal"
+                colorScheme=""
                 leftIcon={<IoLogoInstagram />}
               >
                Instagram
@@ -260,10 +250,10 @@ const Home = () => (
             as={NextLink}
             href="https://www.deeplearning.ai/the-batch/"
             scroll={false}
-            leftIcon={<EmailIcon />}
-            colorScheme="teal"
+            leftIcon={<IoMailUnreadSharp />}
+            colorScheme=""
           >
-            Sign up to my Favority Newsletter Here
+            Sign up to my Favority Newsletter
           </Button>
         </Box>
       </Section>
