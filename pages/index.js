@@ -7,10 +7,8 @@ import { GridItem } from '../components/grid-item'
 import thumbDev from '../public/images/links/dev.png'
 import { BioSection, BioYear } from '../components/bio'
 import thumbMedium from '../public/images/links/medium.png'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoLogOutOutline, IoMailUnreadSharp } from 'react-icons/io5'
 import {Link, Container, Heading, Box, SimpleGrid, Button, List, ListItem, useColorModeValue, chakra } from '@chakra-ui/react'
-import { Palette } from "../lib/theme";
 
 
 const ProfileImage = chakra(Image, {
@@ -28,7 +26,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, guys! I&apos;m a Data Scientist based in São Paulo - Brazil!
+        "I propose to consider the question 'Can machines think?' As he highlights, the traditional approach to such a question is to start with definitions, defining both the terms 'machine' and 'think' - Alan Mathison Turing
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -95,7 +93,8 @@ const Home = () => (
             as={NextLink}
             href="/works"
             scroll={false}
-            rightIcon={<ChevronRightIcon />}
+            colorScheme='primary'
+            rightIcon={<IoLogOutOutline />}
             
           >
             Go to my portfolio
@@ -251,10 +250,10 @@ const Home = () => (
             as={NextLink}
             href="https://www.deeplearning.ai/the-batch/"
             scroll={false}
-            leftIcon={<EmailIcon />}
+            leftIcon={<IoMailUnreadSharp />}
             colorScheme=""
           >
-            Sign up to my Favority Newsletter Here
+            Sign up to my Favority Newsletter
           </Button>
         </Box>
       </Section>
