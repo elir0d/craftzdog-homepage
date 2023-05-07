@@ -26,7 +26,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        "I propose to consider the question 'Can machines think?' As he highlights, the traditional approach to such a question is to start with definitions, defining both the terms 'machine' and 'think' - Alan Mathison Turing
+        &quot;I propose to consider the question &apos;Can machines think?&apos; As he highlights, the traditional approach to such a question is to start with definitions, defining both the terms &apos;machine&apos; and &apos;think&apos;&quot; - Alan Mathison Turing
       </Box>
 
       <Box display={{ md: 'flex' }}>
