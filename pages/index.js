@@ -93,7 +93,8 @@ const Home = () => (
             as={NextLink}
             href="/works"
             scroll={false}
-            colorScheme='primary'
+            color="github"
+            colorScheme='none'
             rightIcon={<IoLogOutOutline />}
             
           >
@@ -157,6 +158,7 @@ const Home = () => (
               <Button
                 width="10rem"
                 variant="solid"
+                color="#7d7d7d"
                 colorScheme=""
                 leftIcon={<IoLogoGithub />}
               >
@@ -169,6 +171,7 @@ const Home = () => (
               <Button
                 width="10rem"
                 variant="solid"
+                color="#3daef4"
                 colorScheme=""
                 leftIcon={<IoLogoTwitter />}
               >
@@ -181,6 +184,7 @@ const Home = () => (
               <Button
                 width="10rem"
                 variant="solid"
+                color="#3380cc"
                 colorScheme=""
                 leftIcon={<IoLogoLinkedin />}
               >
@@ -193,6 +197,7 @@ const Home = () => (
               <Button
                 width="10rem"
                 variant="solid"
+                color="#cb48b0"
                 colorScheme=""
                 leftIcon={<IoLogoInstagram />}
               >
@@ -236,9 +241,10 @@ const Home = () => (
             href="https://www.deeplearning.ai/the-batch/"
             scroll={false}
             leftIcon={<IoMailUnreadSharp />}
-            colorScheme=""
+            color="github"
+            colorScheme="none"
           >
-            Sign up to my Favority Newsletter
+            <span>Sign up to my Favority Newsletter</span>
           </Button>
         </Box>
       </Section>
