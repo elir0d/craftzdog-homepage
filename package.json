@@ -1,7 +1,7 @@
 {
-  "name": "craftzdog-homepage",
-  "version": "1.0.0",
-  "description": "Takuya's website",
+  "name": "rodrigo",
+  "version": "1",
+  "description": "Rodrigo's Website",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
@@ -10,11 +10,12 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Takuya Matsuyama",
+  "author": "Rodrigo Trindade",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.15",
     "@chakra-ui/react": "^2.4.6",
+    "@chakra-ui/system": "^2.5.7",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "framer-motion": "^8.4.0",
@@ -24,11 +25,13 @@
     "react-hook-form": "^7.43.9",
     "react-icons": "^4.7.1",
     "three": "^0.148.0",
-    "update": "^0.7.4"
+    "update": "^0.4.2"
   },
   "devDependencies": {
     "eslint": "^8.31.0",
     "eslint-config-next": "^13.1.1",
     "prettier": "^2.8.2"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/elir0d/rodrigo-trindade-portifolio.git"
 }
