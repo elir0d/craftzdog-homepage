@@ -1,5 +1,5 @@
 {
-  "name": "rodrigo",
+  "name": "Rodrigo",
   "version": "1",
   "description": "Rodrigo's Website",
   "scripts": {
@@ -33,5 +33,6 @@
     "prettier": "^2.8.2"
   },
   "main": "index.js",
-  "repository": "https://github.com/elir0d/rodrigo-trindade-portifolio.git"
+  "repository": "https://github.com/elir0d/rodrigo-trindade-portifolio.git",
+  "private": false
 }
