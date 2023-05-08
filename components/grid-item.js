@@ -105,13 +105,11 @@ export const ContactForm = () => {
         id='submit'
         type='submit'
         name='submit'
-        fontWeight='bold'
         _focusVisible="none"
         _focus="none"
         _hover="none"
         bg="null"
         variant="teal"
-        colorScheme='none'
       >
         Send Message
       </Button>
