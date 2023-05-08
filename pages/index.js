@@ -8,7 +8,7 @@ import thumbDev from '../public/images/links/dev.png'
 import { BioSection, BioYear } from '../components/bio'
 import thumbMedium from '../public/images/links/medium.png'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoLogOutOutline, IoMailUnreadSharp } from 'react-icons/io5'
-import {Link, Container, Heading, Box, SimpleGrid, Button, List, ListItem, useColorModeValue, chakra } from '@chakra-ui/react'
+import {Link, Container, Heading, Box, SimpleGrid, Button, List, ListItem, useColorModeValue, chakra, Divider } from '@chakra-ui/react'
 
 
 const ProfileImage = chakra(Image, {
@@ -64,7 +64,7 @@ const Home = () => (
       </Box>
 
       <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">
+        <Heading as="h3" variant="" textAlign="right">
           Work
         </Heading>
         <Paragraph>
@@ -79,16 +79,16 @@ const Home = () => (
           . He publishes content for marketing his products and his YouTube
           channel called &quot;
           <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
+          as={NextLink}
+          href="https://www.youtube.com/devaslife"
+          passHref
+          target="_blank"
           >
-            Dev as Life
+          Dev as Life
           </Link>
           &quot; has more than 100k subscribers. */}
         </Paragraph>
-        <Box align="center" my={4}>
+        <Box align="center" my={4} textAlign="right">
           <Button
             as={NextLink}
             href="/works"
@@ -102,67 +102,52 @@ const Home = () => (
         </Box>
       </Section>
 
-      <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
+      <Section delay={0.2} >
+        <Divider />
+        <Heading as="h3" variant="" textAlign="right">
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1987</BioYear>
-          Born in Belém do Pará, Brazil.
+        <BioYear>1987</BioYear>
+        <p>Born in Belém do Pará, Brazil</p>
         </BioSection>
         <BioSection>
           <BioYear>2013</BioYear>
-          Move to São Paulo, Brazil.
+          <p>Move to São Paulo, Brazil</p>
         </BioSection>
         <BioSection>
           <BioYear>2019</BioYear>
-          I worked as an Apple Advisor for 2 and a half years supporting VIP customers for the entire Apple ecosystem.
+          <p>I worked as an Apple Advisor for 2 and a half years supporting VIP customers for the entire Apple ecosystem</p>
           </BioSection>
         <BioSection>
         <BioYear>2020</BioYear>
-         I worked as a Support Analyst for 2 years supporting Java Applications and Infrastructure environments for some Companies Like Prodesp and IAMSP.
+         <p>I worked as a Support Analyst for 2 years supporting Java Applications and Infrastructure environments for some Companies Like Prodesp and IAMSP.</p>
         </BioSection>
         <BioSection>
           <BioYear>2021</BioYear>
-          Completed the Associate&apos;s Program in the System Analysis and Development field at Faculdade Impacta de Tecnologia.
+          <p>Completed the Associate&apos;s Program in the System Analysis and Development field at Faculdade Impacta de Tecnologia.</p>
         </BioSection>
         <BioSection>
           <BioYear>2022</BioYear>
-          Complete Extension program in Fundamentals of Statistics, Introduction to R Software and Machine Learning at Universidade de São Paulo - USP.
+          <p>Complete Extension program in Fundamentals of Statistics, Introduction to R Software and Machine Learning at Universidade de São Paulo - USP.</p>
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
-          Started Master of Business Administration in Data Science & Analytics at Universidade de São Paulo - USP.
+          <p>Started Master of Business Administration in Data Science & Analytics at Universidade de São Paulo - USP.</p>
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
-          I worked as a Aplication Support Analyst supporting Python/Django Applications and Oracle Infrastructure environments for some Companies Like Petrobras and Sys Manager.
+          <p>I worked as a Aplication Support Analyst supporting Python/Django Applications and Oracle Infrastructure environments for some Companies Like Petrobras and Sys Manager.</p>
         </BioSection>
         <BioSection>
-          <BioYear>2023 to present</BioYear>
-          Scholarship holder in the Data Science & Analytics Especialization at the Universidade de São Paulo - USP.
+          <BioYear>2023</BioYear>
+          <p>Scholarship holder in the Data Science & Analytics Especialization at the Universidade de São Paulo - USP.</p>
         </BioSection>
       </Section>
 
       <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          I Love so Much
-        </Heading>
-        <Paragraph>
-          Thrash Metal,{' '}
-          <Link href="https://www.torturesquad.com.br/" target="_blank">
-          Torture Squad
-          </Link>
-          , Playing Guitar,{' '}
-          <Link href="https://www.joydivisionofficial.com/reimagined/" target="_blank">
-            Joy Division
-          </Link>
-           , Machine Learning, to Cook and Beer...
-        </Paragraph>
-      </Section>
-
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
+        <Divider/>
+        <Heading as="h3" variant="" textAlign="center" margin="5">
           Socials
         </Heading>
         <List>
@@ -237,7 +222,7 @@ const Home = () => (
           </GridItem>
         </SimpleGrid>
 
-        <Heading as="h3" variant="section-title">
+        <Heading as="h3" variant="" margin="5" textAlign="center">
           Newsletter
         </Heading>
         <p>
